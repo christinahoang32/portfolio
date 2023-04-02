@@ -1,0 +1,158 @@
+/*Global Styles*/
+html,
+body {
+    background-color: white;
+}
+
+/* Intro Section*/
+.myphoto img {
+    width: 140px;
+    height: auto;
+}
+
+.myphoto h1 {
+    font-size: 28px;
+    padding: 1%;
+}
+
+.myphoto p {
+    padding: 1%;
+}
+
+/*shared section styles*/
+.boxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    /* float: left; */
+    width: 25%;
+    background-color: tan;
+}
+
+.boxes header {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.boxes p {
+    text-align: center;
+}
+
+.boxes img {
+    width: 100%;
+}
+
+
+
+.marvellimage {
+    max-width: 700px !important;
+    margin: 20px;
+}
+
+
+.projects {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    justify-content: center;
+    margin: 20px;
+    background-color: tan
+}
+
+.projects h5 {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects p {
+    text-align: center;
+}
+
+.projects img {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.aboutme {
+    display:flex;
+   flex-direction: column;
+   margin:50px;
+   
+}
+
+.aboutme h2{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 1%;
+}
+
+
+#contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+#contact {
+    float: left;
+    overflow-wrap: break-word;
+    padding: 2%;
+    /* position: relative; */
+}
+
+
+/* boxess are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .boxes {
+        width: 50%;
+    }
+
+    .projects {
+        width: 25%;
+    }
+
+    #about {
+        height: 100px;
+    }
+
+
+}
+
+/* boxess are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+    .boxes {
+        width: 100%;
+    }
+
+    .projects {
+        width: 50%;
+    }
+
+    #about {
+        height: 100px;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .boxes {
+        width: 100%;
+    }
+
+    .projects {
+        width: 50%;
+    }
+
+    #about {
+        height: 100px;
+    }
+
+}
